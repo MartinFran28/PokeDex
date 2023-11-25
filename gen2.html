@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="us">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PokeDex</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" href="imagenes/pokemon1.png">
+    </head>
+
+    <body>
+
+        <aside>
+            <nav class="nav">
+                <div class="imagen-gen">
+                    <img src="imagenes/pokemon.png" alt="Pokemon Logo" class="imagen">
+                    <div class="gen gen2"><h1>GENERACIÓN II</h1></div>
+                </div>
+                <ul class="nav-list">
+                    <!-- Lista de los botones que se usaran para filtrar los pokemones por su tipo -->
+                    <li class="nav-item"><button class="btn btn-aside" id="ver-todos">Ver Todos</button></li>
+                    <li class="nav-item"><button class="btn btn-aside normal" id="normal">Normal</button></li>
+                    <li class="nav-item"><button class="btn btn-aside fire" id="fire">Fuego</button></li>
+                    <li class="nav-item"><button class="btn btn-aside water" id="water">Agua</button></li>
+                    <li class="nav-item"><button class="btn btn-aside grass" id="grass">Planta</button></li>
+                    <li class="nav-item"><button class="btn btn-aside electric" id="electric">Eléctrico</button></li>
+                    <li class="nav-item"><button class="btn btn-aside ice" id="ice">Hielo</button></li>
+                    <li class="nav-item"><button class="btn btn-aside fighting" id="fighting">Lucha</button></li>
+                    <li class="nav-item"><button class="btn btn-aside poison" id="poison">Veneno</button></li>
+                    <li class="nav-item"><button class="btn btn-aside ground" id="ground">Tierra</button></li>
+                    <li class="nav-item"><button class="btn btn-aside flying" id="flying">Volador</button></li>
+                    <li class="nav-item"><button class="btn btn-aside psychic" id="psychic">Psíquico</button></li>
+                    <li class="nav-item"><button class="btn btn-aside bug" id="bug">Bicho</button></li>
+                    <li class="nav-item"><button class="btn btn-aside rock" id="rock">Roca</button></li>
+                    <li class="nav-item"><button class="btn btn-aside ghost" id="ghost">Fantasma</button></li>
+                    <li class="nav-item"><button class="btn btn-aside ghost" id="dark">Oscuro</button></li>
+                    <li class="nav-item"><button class="btn btn-aside dragon" id="dragon">Dragón</button></li>
+                    <li class="nav-item"><button class="btn btn-aside steel" id="steel">Acero</button></li>
+                    <li class="nav-item"><button class="btn btn-aside fairy" id="fairy">Hada</button></li>
+                </ul>
+                <ul class="nav-gen">
+                    <!-- Lista de los botones que se usaran para filtrar los pokemones por generacion -->
+                    <li class="nav-item"><a href="index.html"><button class="btn btn-aside-gen gen1">I</button></a></li>
+                    <li class="nav-item"><a href="gen2.html"><button class="btn btn-aside-gen gen2">II</button></a></li>
+                    <li class="nav-item"><a href="gen3.html"><button class="btn btn-aside-gen gen3">III</button></a></li>
+                    <li class="nav-item"><a href="gen4.html"><button class="btn btn-aside-gen gen4">IV</button></a></li>
+                    <li class="nav-item"><a href="gen5.html"><button class="btn btn-aside-gen gen5">V</button></a></li>
+                    <li class="nav-item"><a href="gen6.html"><button class="btn btn-aside-gen gen6">VI</button></a></li>
+                    <li class="nav-item"><a href="gen7.html"><button class="btn btn-aside-gen gen7">VII</button></a></li>
+                    <li class="nav-item"><a href="gen8.html"><button class="btn btn-aside-gen gen8">VIII</button></a></li>
+                    <li class="nav-item"><a href="gen9.html"><button class="btn btn-aside-gen gen9">IX</button></a></li>
+                </ul>
+            </nav> 
+        </aside>
+
+        <main>
+
+            <div id="todos">
+
+                <div class="pokemon-todos" id="listaPokemon">
+                    <!-- Aqui van todos los poquemones, que seran creados en el archivo main.js -->
+                </div>
+
+                <div id="ventanaEmergente" class="ventana-emergente">
+                    <!-- Aqui va el contenido de la ventana emergente, que sera creado en el archivo main.js -->
+                </div> 
+                <div id="fondoOscuro" onclick="cerrarVentanaEmergente()"></div>
+
+            </div>
+        
+        </main>
+
+         <script src="js/gen2.js"></script>  <!-- haciendo la llamada al script para ejecturar el archivo main.js -->
+    
+    </body>
+
+</html>
